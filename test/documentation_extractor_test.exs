@@ -10,6 +10,9 @@ defmodule DocumentationExtractorTest do
     assert DocumentationExtractor.get_function_docs(ExampleModule, :greet) ==
              "Greets given name"
 
+    assert DocumentationExtractor.get_function_docs(ExampleModule, :bye) ==
+             ""
+
     assert DocumentationExtractor.get_module_docs(ExampleModule) == "A example module\n"
   end
 

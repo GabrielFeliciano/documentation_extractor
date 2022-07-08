@@ -112,4 +112,6 @@ defmodule DocumentationExtractor do
   defp get_doc_with_lang(docs_map, lang) when is_map(docs_map) do
     Map.get(docs_map, lang, "")
   end
+
+  defp get_doc_with_lang(_, _), do: ""
 end

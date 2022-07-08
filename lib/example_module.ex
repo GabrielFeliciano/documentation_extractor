@@ -7,4 +7,9 @@ defmodule ExampleModule do
   def greet(name) do
     "Hello #{name}!"
   end
+
+  @doc false
+  def bye(name) do
+    "Bye #{name}!"
+  end
 end
